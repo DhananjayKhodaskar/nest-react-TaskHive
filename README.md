@@ -1,8 +1,9 @@
 # TODO List Web App
 
 ## Description
-This is a TODO list web application developed using React JS for the frontend and Nest JS for the backend. It features role-based access control, allowing different permissions for ADMIN and USER roles.
+This is a TODO list web application developed using **React JS** for the frontend and **Nest JS** for the backend. The application features role-based access control **(RBAC)**, allowing different permissions for users based on their roles, such as **ADMIN** and **USER**. It also implements **JWT-based authentication** with both **Access Tokens** and **Refresh Tokens** for secure and seamless authentication management.
 
+**The RBAC functionality is deeply integrated into the backend using **Nest JS's Guards**, ensuring that access to specific resources and operations is tightly controlled based on the user’s role.**
 ## Key Features
 - **Role-Based Access Control:**
   - **ADMIN**: Can perform all CRUD (Create, Read, Update, Delete) operations.
@@ -10,11 +11,11 @@ This is a TODO list web application developed using React JS for the frontend an
   
 - **Token Management**:
   - Implements both **Access Tokens** and **Refresh Tokens** for secure authentication.
-  - The app automatically logs in internally when the access token expires, as long as the refresh token is valid.
+  - The app automatically logs in internally when the access token expires updating access token as well as refresh token, as long as the refresh token is valid.
 
 ## Technologies Used
-- **Frontend**: React JS
-- **Backend**: Nest JS
+- **Frontend**: React JS,Material UI ,Redux Toolkit ,Axios ,React Router Dom
+- **Backend**: Nest JS with Guards, JWT, Mongoose, Passport
 - **Database**: MongoDB
 - **Authentication**: JWT (JSON Web Tokens)
 ## Login Page
