@@ -121,7 +121,7 @@ const ToDoPage = () => {
         }}
       >
         <Typography variant="h4" sx={{ mb: 4 }}>
-          To-DO App
+          TaskHive
         </Typography>
 
         <Paper
